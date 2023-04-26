@@ -14,12 +14,12 @@ export default function Todo() {
   const [list, setList] = useState<listProps[]>([]);
   const addList = (text: string): void => {
     setList([
-      ...list,
+      
       {
         id: `${uuidv4()}`,
         content: `${text}`,
        
-      },
+      },...list
     ]);
     console.log(list, text);
   };
