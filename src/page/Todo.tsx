@@ -21,7 +21,6 @@ export default function Todo() {
        
       },...list
     ]);
-    console.log(list, text);
   };
   const deleteList = (id: string): void => {
     const newList = list.filter((prop) => prop.id !== id);
